@@ -1,31 +1,23 @@
-# Blank
+# A Theme based on Blank and implementing OpenProps
 
 Blank — starter [Hugo](https://gohugo.io/) theme for developers. Use it to make your own theme.
-
-**[Demo](https://blank-demo.netlify.app/)**
-
-![Blank theme screenshot](https://github.com/Vimux/blank/blob/master/images/splash.png)
 
 ## Installation
 
 In your Hugo site `themes` directory, run:
 
 ```
-git clone https://github.com/vimux/blank
+git clone git@github.com:ricardoom/blank-open-props.git
 ```
 
-Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `blank`.
+Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `blank-open-props`.
 
 ```
-theme = "blank"
+theme = "blank-open-props"
 ```
 
 For more information read the official [quick start guide](https://gohugo.io/getting-started/quick-start/) of Hugo.
 
-## Contributing
-
-Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/Vimux/blank/issues) to let me know. Or make directly a [pull request](https://github.com/Vimux/blank/pulls).
-
 ## License
 
-This theme is released under the [MIT license](https://github.com/Vimux/blank/blob/master/LICENSE).
+This theme is released under the [MIT license](https://github.com/ricardoom/blank-open-props/blob/main/LICENSE).
