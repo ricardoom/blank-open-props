@@ -2,8 +2,6 @@
 
 Blank — starter [Hugo](https://gohugo.io/) theme for developers. Use it to make your own theme.
 
-![Blank theme screenshot](https://github.com/Vimux/blank/blob/master/images/splash.png)
-
 ## Installation
 
 In your Hugo site `themes` directory, run:
