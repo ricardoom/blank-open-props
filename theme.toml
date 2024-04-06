@@ -1,13 +1,13 @@
 name = "Blank"
 license = "MIT"
-licenselink = "https://github.com/vimux/blank/blob/master/LICENSE"
-description = "Starter Hugo theme for developers."
-homepage = "https://github.com/vimux/blank/"
-demosite = "https://blank-demo.netlify.app/"
-tags = ["blog", "plain", "blank", "starter", "development"]
-features = ["blog"]
+licenselink = "https://github.com/ricardoom/blank-open-props/blob/main/LICENSE"
+description = "Starter Hugo theme for developers using Open Props."
+homepage = "https://github.com/ricardoom/blank-open-props"
+# demosite = "https://blank-demo.netlify.app/"
+tags = ["blank-open-props", "starter", "development", "configurable"]
+features = ["configurable theme"]
 min_version = "0.20"
 
 [author]
-  name = "Vimux"
-  homepage = "https://github.com/vimux"
+  name = "ricardoom"
+  homepage = "https://github.com/ricardoom"
