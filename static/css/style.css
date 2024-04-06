@@ -1,3 +1,4 @@
 :root {
-    background-color: #efefef;
+    --bg-color: oklab(59.69% 0.156 49.77 / .5);
+    background-color: var(--bg-color, hsl(0, 0%, 94%));
 }
