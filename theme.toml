@@ -13,5 +13,5 @@ min_version = "0.20"
   homepage = "https://github.com/ricardoom"
 
 [params]
-  [params.openprops]
+  [params.blank-open-props]
     normalize = "https://unpkg.com/open-props/normalize.min.css"
