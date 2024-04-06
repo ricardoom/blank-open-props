@@ -1,10 +1,10 @@
-name = "Blank Open Props"
+name = "BlankOpenProps"
 license = "MIT"
 licenselink = "https://github.com/ricardoom/blank-open-props/blob/main/LICENSE"
 description = "Starter Hugo theme for developers using Open Props."
 homepage = "https://github.com/ricardoom/blank-open-props"
 # demosite = "https://blank-demo.netlify.app/"
-tags = ["blank-open-props", "starter", "development", "configurable"]
+tags = ["starter", "development", "configurable"]
 features = ["configurable theme"]
 min_version = "0.20"
 
@@ -13,5 +13,5 @@ min_version = "0.20"
   homepage = "https://github.com/ricardoom"
 
 [params]
-  [params.blank-open-props]
+  [params.BlankOpenProps]
     normalize = "https://unpkg.com/open-props/normalize.min.css"
