@@ -1,7 +1,7 @@
 {{ $local := .Site.IsServer }}
 {{ $openprops := $.Site.Params.BlankOpenProps }}
 {{ if $local }}
-{{ printf "<!-- ++ layouts/partials/css.html ++ -->" | safeHTML }}
+{{ printf "<!-- themes/blank-open-props/layouts/partials/css.html -->" | safeHTML }}
 {{ end  }}
 
 <link rel="stylesheet" href="{{ $openprops.normalize }}">
