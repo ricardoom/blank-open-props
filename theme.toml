@@ -11,7 +11,3 @@ min_version = "0.20"
 [author]
   name = "ricardoom"
   homepage = "https://github.com/ricardoom"
-
-[params]
-  [params.BlankOpenProps]
-    normalize = "https://unpkg.com/open-props/normalize.min.css"
