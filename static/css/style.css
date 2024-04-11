@@ -1,3 +1,7 @@
 body {
   margin-inline: var(--size-fluid-3);
 }
+
+p {
+  max-width: var(--size-content-3);
+}
