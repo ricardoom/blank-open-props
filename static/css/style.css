@@ -7,5 +7,6 @@ header {
 }
 
 p {
+  margin-block: var(--size-3);
   max-width: var(--size-content-3);
 }
