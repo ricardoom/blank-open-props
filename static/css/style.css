@@ -2,6 +2,10 @@ body {
   margin-inline: var(--size-fluid-3);
 }
 
+header {
+  margin-block: var(--size-6);
+}
+
 p {
   max-width: var(--size-content-3);
 }
