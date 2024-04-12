@@ -1,0 +1,26 @@
+{{ $local := .Site.IsServer }}
+{{ $openprops := $.Site.Params.BlankOpenProps }}
+{{ $sassRoot := "scss/root.scss" }}
+{{/*  {{ $css := resources.Get $sassRoot | toCSS }}  */}}
+{{ if $local }}
+{{ printf "<!-- themes/blank-open-props/layouts/partials/css.html -->" | safeHTML }}
+{{ end  }}
+
+<link rel="stylesheet" href="{{ $openprops.normalize }}">
+<link rel="stylesheet" href="{{ $openprops.openprops }}">
+
+
+{{ with resources.Get $sassRoot }}
+  {{ with . | toCSS }}
+  {{ printf "<!-- blank-open-props files here -->" | safeHTML }} 
+  <link rel="stylesheet" href="{{ .RelPermalink }}">    
+  {{ end }}
+{{ end }}
+
+
+
+{{ printf "<!-- Your Custom SCSS / CSS here to extend the theme -->" | safeHTML }} 
+{{ with resources.Get "/scss/main.scss" | toCSS }}
+
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
