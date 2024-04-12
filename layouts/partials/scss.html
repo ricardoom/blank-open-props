@@ -9,18 +9,12 @@
 <link rel="stylesheet" href="{{ $openprops.normalize }}">
 <link rel="stylesheet" href="{{ $openprops.openprops }}">
 
-
-{{ with resources.Get $sassRoot }}
-  {{ with . | toCSS }}
+{{ with resources.Get $sassRoot | toCSS }}
   {{ printf "<!-- blank-open-props files here -->" | safeHTML }} 
   <link rel="stylesheet" href="{{ .RelPermalink }}">    
-  {{ end }}
 {{ end }}
 
-
-
-{{ printf "<!-- Your Custom SCSS / CSS here to extend the theme -->" | safeHTML }} 
 {{ with resources.Get "/scss/main.scss" | toCSS }}
-
-<link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ printf "<!-- Your Custom SCSS / CSS here to extend the theme -->" | safeHTML }} 
+  <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{ end }}
