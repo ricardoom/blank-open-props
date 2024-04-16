@@ -1,6 +1,11 @@
 [params]
   [params.BlankOpenProps]
-    openprops = 'https://unpkg.com/open-props'
+  # In order for Open Props to work correctly, this must be included
     normalize = 'https://unpkg.com/open-props/normalize.min.css'
-    # Custom Colors
-    
+    # All the Props in the library
+    openprops = 'https://unpkg.com/open-props'
+    # Separate Props, choose wisely...
+
+    # Custom Colors                                    
+    jungle = 'https://unpkg.com/open-props/src/jungle.min.css'
+    # Utility Classes 

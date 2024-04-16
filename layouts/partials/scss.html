@@ -11,6 +11,7 @@
 
 {{ with resources.Get $sassRoot | toCSS }}
   {{ printf "<!-- blank-open-props files here -->" | safeHTML }} 
+{{/*  This is layout(s) Grids and all the rest not part of the Open Props Library  */}}
   <link rel="stylesheet" href="{{ .RelPermalink }}">    
 {{ end }}
 

@@ -1,4 +1,11 @@
-<header>
+{{ define "header" }}
+{{ $home := .IsHome }}
+{{ $inner := .IsPage }}
+{{ if $home }}
+<header class="[ home ][ stack ]">
+{{ else }}
+<header class="[ inner ][ stack ]">
+{{ end }}
 	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 	{{ with .Site.Menus.main }}
 	<nav>
@@ -10,3 +17,4 @@
 	</nav>
 	{{ end }}
 </header>
+{{ end }}
