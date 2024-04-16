@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="{{ $openprops.normalize }}">
 <link rel="stylesheet" href="{{ $openprops.openprops }}">
 
-{{ with resources.Get $sassRoot | toCSS }}
+{{ with resources.Get $sassRoot | toCSS | postCSS }}
   {{ printf "<!-- blank-open-props files here -->" | safeHTML }} 
 {{/*  This is layout(s) Grids and all the rest not part of the Open Props Library  */}}
   <link rel="stylesheet" href="{{ .RelPermalink }}">    
