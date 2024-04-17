@@ -1,6 +1,7 @@
 // Composition/Compose
 // Utility
 // Block
+@import "block/stack";
 @import "block/header";
 @import "block/brand";
 // Exception
@@ -17,4 +18,44 @@ header {
 p, .list-view {
   margin-block: var(--size-4);
   max-width: var(--size-content-3);
+}
+
+
+:where(html) {
+  --link: var(--indigo-7);
+  --link-visited: var(--purple-7);
+  --text-1: var(--gray-12);
+  --text-2: var(--gray-7);
+  --surface-1: var(--gray-0);
+  --surface-2: var(--gray-2);
+  --surface-3: var(--gray-3);
+  --surface-4: var(--gray-4);
+  --scrollthumb-color: var(--gray-7);
+  -webkit-text-size-adjust: none;
+  accent-color: var(--brand,var(--link));
+  background-color: var(--surface-1);
+  block-size:100%;
+  caret-color: var(--brand,var(--link));
+  color: var(--text-1);
+  color-scheme:light;
+  font-family: var(--font-sans);
+  line-height: var(--font-lineheight-3);
+  scrollbar-color: var(--scrollthumb-color) transparent
+}
+
+@media (prefers-color-scheme:dark) {
+  :where(html) {
+    --link:var(--indigo-3);
+    --link-visited:var(--purple-3);
+    --text-1:var(--gray-1);
+    --text-2:var(--gray-4);
+    --surface-1:var(--gray-9);
+    --surface-2:var(--gray-8);
+    --surface-3:var(--gray-7);
+    --surface-4:var(--gray-6);
+    --scrollthumb-color:var(--gray-6);
+    --shadow-strength:10%;
+    --shadow-color:220 40% 2%;
+    color-scheme:dark
+  }
 }

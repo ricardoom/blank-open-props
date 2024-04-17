@@ -1,0 +1,14 @@
+.stack {
+  gap: var(--size-8, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * + * {
+  margin-block: var(--size-3);
+}
+
+.stack > * {
+  margin-block: 0;
+} 
