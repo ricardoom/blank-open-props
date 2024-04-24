@@ -1,11 +1,16 @@
 [params]
   [params.BlankOpenProps]
   # In order for Open Props to work correctly, this must be included
+    # Use the Minimized version for Production if you want to include everything:
     normalize = 'https://unpkg.com/open-props/normalize.min.css'
+    # Individual minified Normalize files:
+    
     # All the Props in the library
     openprops = 'https://unpkg.com/open-props'
     # Separate Props, choose wisely...
 
     # Custom Colors                                    
     jungle = 'https://unpkg.com/open-props/src/jungle.min.css'
+    
     # Utility Classes 
+    
